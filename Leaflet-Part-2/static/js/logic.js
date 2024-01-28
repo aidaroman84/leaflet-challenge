@@ -4,19 +4,28 @@ let tecplatesUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/mast
 const api_key = "pk.eyJ1IjoiYWlkYXJvbWFuODQiLCJhIjoiY2xyeGh2cHdwMGpxbTJqbXBqdTI3MmJhNyJ9.ifBcSoN79P98z_lZqjaAEA";
 
 // Create base layers for diferent map styles
-let satellite = L.tileLayer('https://api.mapbox.com/styles/v1/{style}/tiles/{z}/{x}/{y}?access_token={access_token}', {
+let satellite = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/satellite-v9/tiles/{z}/{x}/{y}@2x?access_token={access_token}', {
     attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-    style:    'mapbox/satellite-v9',
+    maxZoom: 20,
+    id: 'mapbox/satellite-v9',
+    tileSize: 512,
+    zoomOffset: -1,
     access_token: api_key
   });
-let grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/{style}/tiles/{z}/{x}/{y}?access_token={access_token}', {
+let grayscale = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/light-v11/tiles/{z}/{x}/{y}?access_token={access_token}', {
     attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-    style:    'mapbox/light-v11',
+    id:'mapbox/light-v11',
+    maxZoom: 20,
+    tileSize: 512,
+    zoomOffset: -1,
     access_token: api_key
   });
-  let outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/{style}/tiles/{z}/{x}/{y}?access_token={access_token}', {
+  let outdoors = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/tiles/{z}/{x}/{y}?access_token={access_token}', {
     attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-    style:    'mapbox/outdoors-v12',
+    id:'mapbox/outdoors-v12',
+    maxZoom: 20,
+    tileSize: 512,
+    zoomOffset: -1,
     access_token: api_key
   });
 
@@ -50,9 +59,9 @@ L.control.layers(baseMaps, overlayMaps, {
 }).addTo(myMap);
 
 // Adding a tile layer to our map
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(myMap);
+//}).addTo(myMap);
 
 // Perform a GET request to the eartquake URL
 d3.json(earthquakesUrl).then(function (data) {
