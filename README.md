@@ -14,4 +14,4 @@ Part 1: Create the Earthquake Visualization
 Part 2: Gather and Plot More Data (Optional) 
 
 ## **Part 1: Create the Earthquake Visualization** 
-[HTML Link](https://aidroman84.github.com/leaflet-challenge/)
+[HTML Link]([https://aidroman84.github.com/leaflet-challenge/]
