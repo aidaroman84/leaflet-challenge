@@ -63,7 +63,7 @@ d3.json(earthquakesUrl).then(function (data) {
 d3.json(tecplatesUrl).then(function(plateData) {
   // Adding Tectonic data
   L.geoJSON(plateData, {
-    color: "orange",
+    color: "blue",
     weight: 2
   }).addTo(tectonicPlatesLayer);
   tectonicPlatesLayer.addTo(myMap);
