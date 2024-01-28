@@ -13,52 +13,48 @@ Part 1: Create the Earthquake Visualization
 
 Part 2: Gather and Plot More Data (Optional) 
 
-## **Part 1: Create the Earthquake Visualization** 
-[HTML Link](https://aidroman84.github.com/leaflet-challenge/)
+[Deployment Link](https://aidaroman84.github.io/leaflet-challenge/)
 
-![image](https://github.com/aidaroman84/leaflet-challenge/blob/main/Images/EarthquakeMap.png)
+## **Part 1: Create the Earthquake Visualization**
+
+![earthquake](https://github.com/aidaroman84/leaflet-challenge/blob/main/Images/EarthquakeMap.png)
 
 1. Dataset
     - Review and select datasets from [USGS GeoJSON Feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php)
-    - Data updates every 5 minutes. Selected [dataset](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson) that traces all earthquakes from past 7 days 
+    - Data updates every 5 minutes. Selected [dataset](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson) that 
+      traces all earthquakes from past 7 days 
     - Study JSON
-    ![USGS Site](./Images/3-Data.png)
-    ![JSON Data](./Images/4-JSON.png)
 
 2. Import and visualize the data by doing the following:
 
    - Using Leaflet, create a map that plots all the earthquakes from your dataset based on their longitude and latitude.
 
-   - Your data markers should reflect the magnitude of the earthquake by their size and the depth of the earthquake by color. Earthquakes with higher magnitudes should appear    larger, and earthquakes with greater depth should appear darker in color.
+   - Your data markers should reflect the magnitude of the earthquake by their size and the depth of the earthquake by color. Earthquakes 
+     with higher magnitudes should appear    larger, and earthquakes with greater depth should appear darker in color.
 
    **Hint**: The depth of the earth can be found as the third coordinate for each earthquake.
 
    - Include popups that provide additional information about the earthquake when its associated marker is clicked.
 
-   ![image] Popups
+   ![popup](https://github.com/aidaroman84/leaflet-challenge/blob/main/Images/Popups.png)
 
-  - Create a legend that will provide context for your map data.
+   - Create a legend that will provide context for your map data.
 
-    ![legend](./Images/legend.jpg)
+    ![legend](https://github.com/aidaroman84/leaflet-challenge/blob/main/Images/Legend.png)
 
-- Part 2: Gather and Plot More Data (Optional)
-![Outdoors](./Images/outdoors.jpg)
 
 ### Leaflet Part 2: Gather and Plot More Data (Optional)
 
 The USGS wants you to plot a second dataset on your map to illustrate the relationship between tectonic plates and seismic activity. So, you will need to pull in this dataset and visualize it alongside your original data. Data on tectonic plates can be found at <https://github.com/fraxen/tectonicplates>.
 
-The following image is an example screenshot of what the USGS would like you to produce:
-
-![5-Advanced](Images/5-Advanced.png)
-
 Perform the following tasks: 
 
-* Plot the tectonic plates dataset on the map in addition to the earthquakes.
+   -  Plot the tectonic plates dataset on the map in addition to the earthquakes.
 
-* Add other base maps to choose from.
+   -  Add other base maps to choose from.
 
-* Put each dataset into separate overlays that can be turned on and off independently.
+   -  Put each dataset into separate overlays that can be turned on and off independently.
 
-* Add layer controls to our map.
+   -  Add layer controls to our map.
 
+![tectonic](https://github.com/aidaroman84/leaflet-challenge/blob/main/Images/TectonicPlatesMap.png)
