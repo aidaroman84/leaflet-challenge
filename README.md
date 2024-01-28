@@ -49,12 +49,12 @@ The USGS wants you to plot a second dataset on your map to illustrate the relati
 
 Perform the following tasks: 
 
-* Plot the tectonic plates dataset on the map in addition to the earthquakes.
+   -  Plot the tectonic plates dataset on the map in addition to the earthquakes.
 
-* Add other base maps to choose from.
+   -  Add other base maps to choose from.
 
-* Put each dataset into separate overlays that can be turned on and off independently.
+   -  Put each dataset into separate overlays that can be turned on and off independently.
 
-* Add layer controls to our map.
+   -  Add layer controls to our map.
 
 ![tectonic](https://github.com/aidaroman84/leaflet-challenge/blob/main/Images/TectonicPlatesMap.png)
