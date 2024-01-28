@@ -1,6 +1,6 @@
 // Store our API endpoints
 let earthquakesUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
-let tecplatesUrl = "https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json";
+let tecplatesUrl = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";
 const api_key = "pk.eyJ1IjoiYWlkYXJvbWFuODQiLCJhIjoiY2xyeGh2cHdwMGpxbTJqbXBqdTI3MmJhNyJ9.ifBcSoN79P98z_lZqjaAEA";
 
 // Create base layers for diferent map styles
