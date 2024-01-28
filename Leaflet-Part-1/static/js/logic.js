@@ -38,7 +38,7 @@ d3.json(queryUrl).then(function (data) {
     // Function for each feature in the features array.
     function onEachFeature(feature, layer) {
         // Popups providing additional information about the earthquake when its associated marker is clicked.
-        layer.bindPopup(`<h3>${feature.properties.place}</h3><hr><p>${new Date(feature.properties.time)}</p></h3><hr><p>Magnitude: ${feature.properties.mag}</p></h3><hr><p>Depth: ${feature.geometry.coordinates[2]}</p>`);
+        layer.bindPopup(`<strong>Location: </strong>${feature.properties.place}<br><strong>Date: </strong>${new Date(feature.properties.time)}<br><strong>Magnitude: </strong>${feature.properties.mag}<br><strong>Depth: </strong>${feature.geometry.coordinates[2]}`);
     }
  
     // Adding earthquake data to the map
